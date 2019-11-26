@@ -1,5 +1,5 @@
 *{
-font-family: 'Archivo', sans-serif;	
+font-family: 'Archivo', sans-serif;
 }
 .container{
 display: block;
@@ -91,6 +91,7 @@ border: 1px solid #545454;
 				li{
 				font-size: 2em;
 				line-height: 5vh;
+
 				}
 			}
 		}
@@ -102,6 +103,9 @@ border: 1px solid #545454;
 			img{
 			width: 100%;
 			height: 25vh;
+			}
+			.imgTEXT{
+				display: none;
 			}
 		}
 	}
@@ -212,7 +216,93 @@ border: 1px solid #545454;
 				.slideIMG{
 					height: 85vh;
 				}
+				div{
+				text-align: center;
+				position: absolute;
+				top: 75vh;
+				width: 91vw;
+					.imgTEXT{
+					font-size: 2vh;
+				    text-align: center;
+				    background: #edda15;
+				    display: inline;
+					    span{
+					    	font-size: 4vh;
+					    	background: #edda15;
+
+					    }
+					}	
+				}
+				
 			}
 		}
+
+		.infoSECTION{
+			@mixin infoTXT{
+				i{
+				color: #545454;
+				font-size: 1em;
+				margin-top: 1em;
+				margin-left: 4em;
+				margin-bottom: 0.5em;
+					span{
+					color: #545454;
+					}
+				}
+				hr{
+					width: 25vw;
+				}
+				p{
+				padding: 0 4em;
+				font-size: 1em;
+				line-height: 1.5em;
+				width: 20vw;
+				}
+			}
+			#info1{
+			position: relative;
+			@include infoTXT;
+			margin-bottom: 5em;
+			display: inline-block;
+			width: 30vw;
+				.proefles{
+				display: block;
+				width: 25vw;
+				margin-left: 5vw;
+				background: #ffc107;
+				font-size: 1em;
+				padding: 1vw;
+				}
+			}
+			#info2{
+			@include infoTXT;
+			margin-bottom: 5em;
+			display: inline-block;
+			width: 30vw;
+			position: absolute;
+			}
+			#info3{
+			@include infoTXT;
+			margin-bottom: 5em;
+			display: inline-block;
+			width: 30vw;
+			position: absolute;
+			left: 65vw;
+			}
+		}
+
+		.video{
+			iframe{
+			display: block;
+		    margin: 2em auto;
+		    width: 75vw;
+		    height: 39vh;
+		}
+	}
+
+
+
+
+
 	}
 }

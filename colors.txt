@@ -1,0 +1,8 @@
+top menu:
+#edda15
+
+orange button:
+#ffc107
+
+fontawesome & text:
+#545454
